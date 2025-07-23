@@ -7,3 +7,7 @@
 # Python virtual environment (if you named it 'venv' or '.venv')
 /env/
 /.env/
+
+keep/
+
+Project Structure.txt

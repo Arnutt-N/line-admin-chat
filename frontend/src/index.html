@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Admin Panel</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <div class="flex h-screen">
+    <!-- Sidebar: User List -->
+    <aside class="w-64 bg-white dark:bg-gray-800 p-4 border-r">
+      <h2 class="text-xl font-bold mb-4">Users</h2>
+      <ul id="user-list" class="space-y-2"></ul>
+    </aside>
+    <!-- Main: Dashboard/Chat -->
+    <main class="flex-1 p-4">
+      <div id="dashboard" class="grid grid-cols-4 gap-4 mb-4">
+        <!-- Stats cards -->
+      </div>
+      <div id="chat-window" class="hidden bg-white dark:bg-gray-800 p-4 rounded shadow">
+        <h2 id="chat-title" class="text-xl font-bold mb-4"></h2>
+        <div id="chat-messages" class="h-96 overflow-y-auto mb-4"></div>
+        <form id="chat-form" class="flex">
+          <input id="chat-input" type="text" class="flex-1 p-2 border dark:bg-gray-700" placeholder="Type message...">
+          <button type="submit" class="p-2 bg-blue-500 text-white"><i data-lucide="send"></i></button>
+        </form>
+      </div>
+    </main>
+    <!-- Settings -->
+    <aside class="w-64 bg-white dark:bg-gray-800 p-4 border-l">
+      <h2 class="text-xl font-bold mb-4">Settings</h2>
+      <label class="flex items-center mb-2">
+        <input id="theme-toggle" type="checkbox" class="mr-2">
+        Dark Mode
+      </label>
+      <label class="flex items-center mb-2">
+        <input id="desktop-notify" type="checkbox" class="mr-2" checked>
+        Desktop Notifications
+      </label>
+      <label class="flex items-center mb-2">
+        <input id="sound-notify" type="checkbox" class="mr-2" checked>
+        Sound Alerts
+      </label>
+    </aside>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/chat.js"></script>
+  <script type="module" src="./js/settings.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

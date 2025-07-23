@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+line-bot-sdk
+requests
+alembic
+websockets
+
+google-adk[database]==0.3.0
+yfinance==0.2.56
+psutil==5.9.5
+google-generativeai==0.8.5
+python-dotenv==1.1.0
+deprecated
+pydantic
